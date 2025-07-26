@@ -1,0 +1,191 @@
+/* Even more beautiful, festive, and modern invitation styles */
+.invitation-container.modern {
+  max-width: 440px;
+  margin: 56px auto;
+  padding: 2.7rem 2rem 2.2rem 2rem;
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+  border-radius: 28px;
+  box-shadow: 0 12px 36px rgba(60,60,120,0.13);
+  text-align: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.invitation-container.modern::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, #a5b4fc 0%, #e0e7ff 80%);
+  opacity: 0.35;
+  z-index: 0;
+}
+.invitation-header {
+  margin-bottom: 1.3rem;
+  position: relative;
+  z-index: 1;
+}
+.event-title {
+  font-size: 2.4rem;
+  color: #2d72d9;
+  margin-bottom: 0.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #e0e7ff;
+}
+.event-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #2d72d9 60%, #5b9aff 100%);
+  color: #fff;
+  border-radius: 14px;
+  padding: 0.4rem 1.3rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(60,60,120,0.10);
+}
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+  background: #f1f5fb;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.3rem;
+  font-size: 1.13rem;
+  color: #333;
+  box-shadow: 0 2px 12px rgba(60,60,120,0.06);
+  position: relative;
+  z-index: 1;
+}
+.event-details i {
+  color: #2d72d9;
+  margin-right: 0.5em;
+}
+.event-message {
+  margin-bottom: 1.7rem;
+  color: #444;
+  font-size: 1.13rem;
+  font-style: italic;
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 0.7rem 0.5rem;
+  box-shadow: 0 1px 4px rgba(60,60,120,0.03);
+  z-index: 1;
+  position: relative;
+}
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: stretch;
+  z-index: 1;
+  position: relative;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.rsvp-form label {
+  font-weight: 600;
+  color: #2d72d9;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.5px;
+}
+.rsvp-form input,
+.rsvp-form select {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  border: 1.5px solid #bfc9d9;
+  font-size: 1.05rem;
+  margin-top: 0.1rem;
+  background: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(60,60,120,0.04);
+}
+.rsvp-form input:focus,
+.rsvp-form select:focus {
+  border: 2px solid #2d72d9;
+  outline: none;
+  box-shadow: 0 2px 8px #a5b4fc33;
+}
+.modern-btn {
+  background: linear-gradient(90deg, #2d72d9 60%, #5b9aff 100%);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.13rem;
+  font-weight: 700;
+  box-shadow: 0 2px 12px rgba(60,60,120,0.10);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  letter-spacing: 0.5px;
+}
+.modern-btn:hover {
+  background: linear-gradient(90deg, #1a4e96 60%, #2d72d9 100%);
+  box-shadow: 0 4px 18px rgba(60,60,120,0.16);
+  transform: translateY(-2px) scale(1.03);
+}
+.thank-you {
+  color: #2d72d9;
+  font-size: 1.35rem;
+  margin-top: 2.2rem;
+  background: #e0e7ff;
+  border-radius: 12px;
+  padding: 1.3rem 0.7rem;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(60,60,120,0.06);
+  z-index: 1;
+  position: relative;
+  animation: pop-in 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+@keyframes pop-in {
+  0% { transform: scale(0.7); opacity: 0; }
+  80% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); }
+}
+/* Decorative confetti */
+.invitation-container.modern::after {
+  content: '🎊 🎈 🎉';
+  position: absolute;
+  left: 18px;
+  top: 12px;
+  font-size: 1.5rem;
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .invitation-container.modern {
+    padding: 1.3rem 0.5rem 1.5rem 0.5rem;
+  }
+  .event-details {
+    font-size: 1rem;
+    padding: 0.7rem 0.5rem;
+  }
+  .event-title {
+    font-size: 1.5rem;
+  }
+}
