@@ -1,6 +1,5 @@
 const fs = require('fs');
 const { PDFDocument, rgb } = require('pdf-lib');
-import { User } from '../models/user';
 
 async function personalizeInvite() {
   const templateBytes = fs.readFileSync('./templates/Invitation-template.pdf');
