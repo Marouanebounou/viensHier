@@ -6,6 +6,8 @@
     "fontkit": "^2.0.4",
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
+    "mime-db": "^1.54.0",
+    "mime-types": "^3.0.1",
     "mongoose": "^8.16.5",
     "nodemailer": "^7.0.5",
     "nodemon": "^3.1.10",
