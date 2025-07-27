@@ -12,8 +12,8 @@ connectDB();
 
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? [process.env.FRONTEND_URL] 
-    : ["http://localhost:5173"],  
+    ? [process.env.BASE_URL] 
+    : ["https://viens-hier.vercel.app"],  
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization"],
 };
