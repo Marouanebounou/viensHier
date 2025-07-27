@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'https://viens-hier-api.vercel.app/api',
+    baseURL: 'https://vienshier-api.onrender.com/',
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json'
