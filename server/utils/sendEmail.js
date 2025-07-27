@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 const fs = require('fs');
 const { PDFDocument, rgb, StandardFonts } = require('pdf-lib');
 const path = require('path');
-const saveUser = require('../routes/user.js');
+const { saveUser } = require('../controllers/user');
 
 const sendEmailWithAttachment = async (fullName,email,attachmentPath) => {
 
@@ -151,9 +151,10 @@ const personalizeAndSendInvite = async (fullName, email, number) => {
     const pdfPath = `invites/${fullName}.pdf`;
     fs.writeFileSync(pdfPath, pdfBytes);
     
+    console.log(`Personalized invitation created for ${fullName}`);
     // Send email
     await sendEmailWithAttachment(fullName,email, pdfPath);
-    
+    await saveUser(fullName,email,number);
     console.log(`Invitation sent successfully to ${fullName} at ${email}`);
     
   } catch (error) {
