@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'srv931649.hstgr.cloud:3000',
+    baseURL: 'http://srv931649.hstgr.cloud:3000/api',
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json'
