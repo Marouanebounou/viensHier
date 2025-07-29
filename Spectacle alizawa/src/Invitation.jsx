@@ -48,7 +48,7 @@ const handleSubmit = async (e) => {
 
     setLoading(true);
     try {
-      const res = await api.post("api", formData); // Uncomment this in your actual project
+      const res = await api.post("/api", formData); // Uncomment this in your actual project
       console.log(res.data);
       
       // Simulated API call for demo
