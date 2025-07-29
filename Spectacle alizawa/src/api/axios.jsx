@@ -2,7 +2,6 @@ import axios from "axios";
 
 const api = axios.create({
     baseURL: 'https://srv931649.hstgr.cloud',
-    withCredentials: true,
     headers: {
         'Content-Type': 'application/json'
     }
