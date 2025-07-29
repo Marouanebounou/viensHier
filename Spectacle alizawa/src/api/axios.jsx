@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'https://vienshier-api.onrender.com/',
+    baseURL: 'http://srv931649.hstgr.cloud:3000/',
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json'

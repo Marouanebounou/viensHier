@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import api from "./api/axios"; // Uncomment this in your actual project
+import api from "./api/axios"; 
 import { motion } from "framer-motion";
 import logo from './assets/1.png';
 import { toast, ToastContainer } from "react-toastify";
@@ -48,8 +48,8 @@ const handleSubmit = async (e) => {
 
     setLoading(true);
     try {
-      // const res = await api.post("/", formData); // Uncomment this in your actual project
-      // console.log(res.data);
+      const res = await api.post("/", formData); // Uncomment this in your actual project
+      console.log(res.data);
       
       // Simulated API call for demo
       await new Promise(resolve => setTimeout(resolve, 1000));
